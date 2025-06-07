@@ -1,12 +1,177 @@
-
+/* RESET GERAL */
+html,
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    padding: 20px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia", serif;
+  background-color: #fffaf5;
+  color: #3a1f1a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-ul li {
-    background: white;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+
+.main-content {
+  flex: 1;
+}
+
+/* TOPO */
+.topo {
+  background-color: #3a1f1a;
+  color: #fce7d2;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.logo p {
+  margin: 5px 0 0;
+  font-size: 1.1em;
+}
+
+/* CATÁLOGO */
+.catalogo {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.catalogo h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.produto {
+  background-color: #f8eee7;
+  border: 1px solid #e0d4cb;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.produto:hover {
+  transform: scale(1.03);
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.produto h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+
+.produto p {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* BOTÕES GERAIS */
+.pedido-btn {
+  background-color: #fce7d2;
+  color: #3a1f1a;
+  border: 2px solid #3a1f1a;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+.pedido-btn:hover {
+  background-color: #3a1f1a;
+  color: #fce7d2;
+}
+
+.pedido-titulo {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: #3a1f1a;
+  color: #fce7d2;
+  padding: 30px 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  border-top: 2px solid #fce7d2;
+  border-bottom: 2px solid #fce7d2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right,
+.footer-button {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-left h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.footer-left p,
+.footer-center p,
+.footer-right p {
+  margin: 10px 0;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+  .produtos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .produto {
+    width: 90%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-button {
+    margin: 20px 0;
+  }
 }
