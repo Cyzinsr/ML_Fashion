@@ -1,0 +1,12 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffbe6;
+    padding: 20px;
+}
+form {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #fff4cc;
+    border-radius: 8px;
+}
